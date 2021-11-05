@@ -1303,7 +1303,7 @@
                      <specDesc key="extMeta"/>
                   </specList>
                </p>
-               <p>The content of the <gi scheme="MEI">item</gi> is quite similar to <gi scheme="MEI">manifestation</gi> with a few omissions:</p>
+               <p>The content of the <gi scheme="MEI">item</gi> is quite similar to <gi scheme="MEI">manifestation</gi>. The <gi scheme="MEI">item</gi> level is used to describe specifics concerning a single item. These information can differ from the description at <gi scheme="MEI">manifestation</gi> or can be additional information. The following elements can be used:</p>
                <p>
                   <specList>
                      <specDesc key="head"/>
