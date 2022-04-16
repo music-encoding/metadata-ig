@@ -1753,12 +1753,21 @@
                   <p></p>
                   <p>
                      <specList>
+                        <specDesc key="acquisition"/>
                         <specDesc key="exhibHist"/>
                         <specDesc key="physLoc"/>
+                        <specDesc key="provenance"/>
                         <specDesc key="treatHist"/>
                         <specDesc key="treatSched"/>
                      </specList>
                   </p>
+                  <p>
+                     <specList>
+                        <specDesc key="acquisition"/>
+                        <specDesc key="provenance"/>
+                     </specList>
+                  </p>
+                  <p>[In Preparation]</p>
                   <p></p>
                </div>
             </div>
