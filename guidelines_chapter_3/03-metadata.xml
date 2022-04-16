@@ -1816,7 +1816,14 @@
                         <specDesc key="provenance"/>
                      </specList>
                   </p>
-                  <p><gi scheme="MEI">acquisition</gi> is a container for recording the process of the acquirement of an item by the holding institution. In comparison, <gi scheme="MEI">provenance</gi> deals with the history of ownership or custodianship of an item. Both elements allow for the choice of either text or more structured information when formulating the specific encoding. It is recommended to make use of <gi scheme="MEI">p</gi> elements when a text-centred encoding is favoured and to use the <gi scheme="MEI">eventList</gi> element for a more structured encoding. It is up to the encoder to decide where the information is most appropriate for the particular project or encoding purposes.</p>
+                  <p><gi scheme="MEI">acquisition</gi> is a container for events recording the process of the acquirement of an item by the holding institution. In comparison, <gi scheme="MEI">provenance</gi> deals with the history of ownership or custodianship. Both elements allow for the choice of either text or more structured information when formulating the specific encoding. It is recommended to make use of <gi scheme="MEI">p</gi> elements when a text-centred encoding is favoured and to use the <gi scheme="MEI">eventList</gi> element for a more structured encoding.</p>
+                  <p>For better machine readability while retaining the freedom to describe individual processes, it is recommended to store the various ownership relationships of manuscripts in an eventList. For each <gi>event</gi>, i.e. the period of time when an item was in the possession of a person or entity, it is possible to create a <gi>desc</gi> and at the same time mark <gi>date</gi> and <gi>person</gi> separately, as in the following example:</p>
+                  <p>
+                     <figure>
+                        <head/>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="code" xml:space="preserve"><xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../examples/header/header-sample093.txt" parse="text"/></egXML>
+                     </figure>
+                  </p>
                   <p>
                      <specList>
                         <specDesc key="physLoc"/>
