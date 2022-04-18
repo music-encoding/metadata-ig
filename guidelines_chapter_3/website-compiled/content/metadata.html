@@ -7,7 +7,7 @@
       <meta name="author" content="Perry D. Roland">
       <meta name="subject" content="Documentation for the Music Encoding Initiative (MEI) Data Model">
       <meta name="keywords" content="Music Encoding, MEI, Digital Humanities, Musicology, Music Librarianship, Music Information Retrieval">
-      <meta name="date" content="2022-04-16">
+      <meta name="date" content="2022-04-18">
       <meta name="generator" content="MEI XSLT stylesheets">
       <meta name="DC.Title" content="Music Encoding Initiative Guidelines">
       <meta name="DC.Type" content="Text">
@@ -5650,7 +5650,7 @@
                      
                      <div class="div3">
                         
-                        <h3 id="manuscriptsAndPrints"><span class="headingNumber">3.7.1</span><span class="head">Manuscripts and prints</span></h3>
+                        <h3 id="manuscriptsAndPrints"><span class="headingNumber">3.7.1</span><span class="head">Manuscripts and Prints</span></h3>
                         
                         <p>Many of the elements to be described in this sub-chapter can occur in several contexts.
                            In the following those elements will be described first. Then this sub-chapter is
@@ -5729,7 +5729,11 @@
                               </div>
                            </p>
                            
-                           <p>[Description in preparation]</p>
+                           <p>A <a class="link_odd link_odd_elementSpec" href="../elements/colophon.html">colophon</a> is an inscription at the end of a text. It is common in medieval manuscripts and
+                              early prints and often bearing information about the place and year of publication
+                              and sometimes about the printer or printing workshop. It also might be possible that
+                              the <a class="link_odd link_odd_elementSpec" href="../elements/colophon.html">colophon</a> bears information on the author or an author’s note. From today’s perspective, the
+                              <a class="link_odd link_odd_elementSpec" href="../elements/colophon.html">colophon</a> is a kind of <a class="link_odd link_odd_elementSpec" href="../elements/imprint.html">imprint</a> of early prints.</p>
                            </div>
                         
                         <div class="div4">
@@ -7408,11 +7412,37 @@
                            </div>
                            </p>
                         
-                        <p><a class="link_odd link_odd_elementSpec" href="../elements/acquisition.html">acquisition</a> is a container for recording the process of the acquirement of an item by the holding
-                           institution. In comparison, <a class="link_odd link_odd_elementSpec" href="../elements/provenance.html">provenance</a> deals with the history of ownership or custodianship of an item. Both elements allow
-                           for the choice of either text or more structured information when formulating the
-                           specific encoding. It is recommended to make use of <a class="link_odd link_odd_elementSpec" href="../elements/p.html">p</a> elements when a text-centred encoding is favoured and to use the <a class="link_odd link_odd_elementSpec" href="../elements/eventList.html">eventList</a> element for a more structured encoding. It is up to the encoder to decide where the
-                           information is most appropriate for the particular project or encoding purposes.</p>
+                        <p><a class="link_odd link_odd_elementSpec" href="../elements/acquisition.html">acquisition</a> is a container for events recording the process of the acquirement of an item by
+                           the holding institution. In comparison, <a class="link_odd link_odd_elementSpec" href="../elements/provenance.html">provenance</a> deals with the history of ownership or custodianship. Both elements allow for the
+                           choice of either text or more structured information when formulating the specific
+                           encoding. It is recommended to make use of <a class="link_odd link_odd_elementSpec" href="../elements/p.html">p</a> elements when a text-centred encoding is favoured and to use the <a class="link_odd link_odd_elementSpec" href="../elements/eventList.html">eventList</a> element for a more structured encoding.</p>
+                        
+                        <p>For better machine readability while retaining the freedom to describe individual
+                           processes, it is recommended to store the various ownership relationships of manuscripts
+                           in an eventList. For each <a class="link_odd link_odd_elementSpec" href="../elements/event.html">event</a>, i.e. the period of time when an item was in the possession of a person or entity,
+                           it is possible to create a <a class="link_odd link_odd_elementSpec" href="../elements/desc.html">desc</a> and at the same time mark <a class="link_odd link_odd_elementSpec" href="../elements/date.html">date</a> and  separately, as in the following example:</p>
+                        
+                        <p>
+                           
+                           <figure class="figure specPage">
+                              <div xml:space="preserve" class="pre code egXML_feasible">
+                                 <code>
+                                    
+                                    
+                                    <div class="indent indent1"><span data-indentation="1" class="element">&lt;event&gt;</span>
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;date <span class="attribute">startdate=</span><span class="attributevalue">"1900"</span> <span class="attribute">enddate=</span><span class="attributevalue">"1911"</span>&gt;</span>1900-1911<span data-indentation="2" class="element">&lt;/date&gt;</span></div>.
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;persName <span class="attribute">role=</span><span class="attributevalue">"former owner"</span>&gt;</span>Charles Malherbe<span data-indentation="2" class="element">&lt;/persName&gt;</span></div>.
+                                       
+                                       <div class="indent indent2"><span data-indentation="2" class="element">&lt;desc&gt;</span>From 1900 to 1911, the manuscript was owned by Charles Malherbe.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                                       <span data-indentation="1" class="element">&lt;/event&gt;</span></div>
+                                    
+                                    </code>
+                                 </div>
+                              <figcaption class="caption">Listing 112. </figcaption>
+                           </figure>
+                           </p>
                         
                         <p>
                            
@@ -7531,7 +7561,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 112. </figcaption>
+                              <figcaption class="caption">Listing 113. </figcaption>
                            </figure>
                            </p>
                         
@@ -7720,7 +7750,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 113. </figcaption>
+                              <figcaption class="caption">Listing 114. </figcaption>
                            </figure>
                            </p>
                         
@@ -7789,7 +7819,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 114. </figcaption>
+                              <figcaption class="caption">Listing 115. </figcaption>
                            </figure>
                            </p>
                         
@@ -7930,7 +7960,7 @@
                                     
                                     </code>
                                  </div>
-                              <figcaption class="caption">Listing 115. </figcaption>
+                              <figcaption class="caption">Listing 116. </figcaption>
                            </figure>
                            </p>
                         </div>
@@ -8060,7 +8090,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 116. </figcaption>
+                                 <figcaption class="caption">Listing 117. </figcaption>
                               </figure>
                               </p>
                            
@@ -8199,7 +8229,7 @@
                                        
                                        </code>
                                     </div>
-                                 <figcaption class="caption">Listing 117. </figcaption>
+                                 <figcaption class="caption">Listing 118. </figcaption>
                               </figure>
                               </p>
                            </div>
@@ -8240,7 +8270,7 @@
                   </section>
             </div>
             <div class="column col-4 hide-md">
-               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/7c49f97-dirty" target="_blank" rel="noopener noreferrer">#7c49f97</a>)</span></div>
+               <div id="guidelinesVersion"><span class="versionLabel">MEI Version: </span><span id="versionID">5.0.0-dev</span><span class="gitLink">(<a href="https://github.com/music-encoding/music-encoding/commit/7318afc-dirty" target="_blank" rel="noopener noreferrer">#7318afc</a>)</span></div>
                <form>
                   <div class="search_group"><input name="q" id="search_input" title="At least 3 characters" type="text"><button type="submit" id="submitSearchButtonSide" class="search_button"><span class="search_icon">⚲</span></button></div>
                </form>
@@ -8254,7 +8284,7 @@
                   <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                </ul>
                <div class="divider"></div>
-               <p class="sectionToc sticky"><a class="level-2" href="#headerintro">3.1 Introduction</a><a class="level-2" href="#headerstructure">3.2 Structure of the MEI Header</a><a class="level-2" href="#commonconcepts">3.3 Common Metadata Concepts</a><a class="level-3" href="#headerTitleStatement">3.3.1 Title Statement</a><a class="level-3" href="#headerrespstatement">3.3.2 Responsibility Attribution</a><a class="level-2" href="#meifile">3.4 Information about an MEI file</a><a class="level-3" href="#headerFileDescription">3.4.1 File Description</a><a class="level-3" href="#headerEncodingDescription">3.4.2 Encoding Description</a><a class="level-3" href="#headerRevisionDescription">3.4.3 Revision Description</a><a class="level-2" href="#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a><a class="level-3" href="#FRBRentities">3.5.1 FRBR Entities in MEI</a><a class="level-3" href="#FRBRcomponents">3.5.2 Component Parts in FRBR</a><a class="level-3" href="#FRBRrelations">3.5.3 FRBR Relationships</a><a class="level-3" href="#headerRelatedItemVsFRBR">3.5.4 RelatedItem vs. FRBR</a><a class="level-2" href="#headerWorkDescription">3.6 Work Description</a><a class="level-3" href="#headerWorkIdentification">3.6.1 Work Identification</a><a class="level-3" href="#headerWorkIncipit">3.6.2 Incipits</a><a class="level-3" href="#headerWorkKeyTempoMeter">3.6.3 Key, Tempo, and Meter</a><a class="level-3" href="#headerWorkOtherChar">3.6.4 Other Identifying Characteristics</a><a class="level-3" href="#headerWorkHistory">3.6.5 Work History</a><a class="level-3" href="#headerWorkLanguage">3.6.6 Language Usage</a><a class="level-3" href="#headerWorkMedium">3.6.7 Performance Medium</a><a class="level-3" href="#headerWorkAudience">3.6.8 Audience and Context</a><a class="level-3" href="#headerWorkContents">3.6.9 Work Contents</a><a class="level-3" href="#headerWorkBiblList">3.6.10 Bibliographic Evidence</a><a class="level-3" href="#headerWorkNotes">3.6.11 Notes Statement</a><a class="level-3" href="#headerWorkClass">3.6.12 Classification</a><a class="level-3" href="#headerWorkRelationships">3.6.13 Work Relationships</a><a class="level-2" href="#msdesc">3.7 Encoding Sources in MEI</a><a class="level-3" href="#manuscriptsAndPrints">3.7.1 Manuscripts and prints</a><a class="level-3" href="#audioAndOther">3.7.2 Describing Audio Sources or Other Media</a><a class="level-3" href="#historicalAccount">3.7.3 Additional for historical account</a><a class="level-2" href="#headerusecases">3.8 Typical Use Cases</a><a class="level-3" href="#headerIndependentHeader">3.8.1 Independent Headers</a><a class="level-3" href="#headerExtendedMetadata">3.8.2 Including non-MEI Metadata in MEI files</a><a class="level-3" href="#headerMinimalRecommendedHeader">3.8.3 Minimal and Recommended Header Information</a><a class="level-3" href="#headerBiblAnalog">3.8.4 Header Elements and their Relationship to Other Bibliographic Standards</a><a class="level-3" href="#corpus">3.8.5 Musical Corpora</a></p>
+               <p class="sectionToc sticky"><a class="level-2" href="#headerintro">3.1 Introduction</a><a class="level-2" href="#headerstructure">3.2 Structure of the MEI Header</a><a class="level-2" href="#commonconcepts">3.3 Common Metadata Concepts</a><a class="level-3" href="#headerTitleStatement">3.3.1 Title Statement</a><a class="level-3" href="#headerrespstatement">3.3.2 Responsibility Attribution</a><a class="level-2" href="#meifile">3.4 Information about an MEI file</a><a class="level-3" href="#headerFileDescription">3.4.1 File Description</a><a class="level-3" href="#headerEncodingDescription">3.4.2 Encoding Description</a><a class="level-3" href="#headerRevisionDescription">3.4.3 Revision Description</a><a class="level-2" href="#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a><a class="level-3" href="#FRBRentities">3.5.1 FRBR Entities in MEI</a><a class="level-3" href="#FRBRcomponents">3.5.2 Component Parts in FRBR</a><a class="level-3" href="#FRBRrelations">3.5.3 FRBR Relationships</a><a class="level-3" href="#headerRelatedItemVsFRBR">3.5.4 RelatedItem vs. FRBR</a><a class="level-2" href="#headerWorkDescription">3.6 Work Description</a><a class="level-3" href="#headerWorkIdentification">3.6.1 Work Identification</a><a class="level-3" href="#headerWorkIncipit">3.6.2 Incipits</a><a class="level-3" href="#headerWorkKeyTempoMeter">3.6.3 Key, Tempo, and Meter</a><a class="level-3" href="#headerWorkOtherChar">3.6.4 Other Identifying Characteristics</a><a class="level-3" href="#headerWorkHistory">3.6.5 Work History</a><a class="level-3" href="#headerWorkLanguage">3.6.6 Language Usage</a><a class="level-3" href="#headerWorkMedium">3.6.7 Performance Medium</a><a class="level-3" href="#headerWorkAudience">3.6.8 Audience and Context</a><a class="level-3" href="#headerWorkContents">3.6.9 Work Contents</a><a class="level-3" href="#headerWorkBiblList">3.6.10 Bibliographic Evidence</a><a class="level-3" href="#headerWorkNotes">3.6.11 Notes Statement</a><a class="level-3" href="#headerWorkClass">3.6.12 Classification</a><a class="level-3" href="#headerWorkRelationships">3.6.13 Work Relationships</a><a class="level-2" href="#msdesc">3.7 Encoding Sources in MEI</a><a class="level-3" href="#manuscriptsAndPrints">3.7.1 Manuscripts and Prints</a><a class="level-3" href="#audioAndOther">3.7.2 Describing Audio Sources or Other Media</a><a class="level-3" href="#historicalAccount">3.7.3 Additional for historical account</a><a class="level-2" href="#headerusecases">3.8 Typical Use Cases</a><a class="level-3" href="#headerIndependentHeader">3.8.1 Independent Headers</a><a class="level-3" href="#headerExtendedMetadata">3.8.2 Including non-MEI Metadata in MEI files</a><a class="level-3" href="#headerMinimalRecommendedHeader">3.8.3 Minimal and Recommended Header Information</a><a class="level-3" href="#headerBiblAnalog">3.8.4 Header Elements and their Relationship to Other Bibliographic Standards</a><a class="level-3" href="#corpus">3.8.5 Musical Corpora</a></p>
             </div>
          </div>
          <div class="modal" id="toc-modal"><a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a><div class="modal-container">
@@ -8272,7 +8302,7 @@
                         <li class="nav-item"><a href="../data-types.html">Data Types</a></li>
                      </ul>
                      <div class="divider"></div>
-                     <p class="sectionToc sticky"><a class="level-2" href="#headerintro">3.1 Introduction</a><a class="level-2" href="#headerstructure">3.2 Structure of the MEI Header</a><a class="level-2" href="#commonconcepts">3.3 Common Metadata Concepts</a><a class="level-3" href="#headerTitleStatement">3.3.1 Title Statement</a><a class="level-3" href="#headerrespstatement">3.3.2 Responsibility Attribution</a><a class="level-2" href="#meifile">3.4 Information about an MEI file</a><a class="level-3" href="#headerFileDescription">3.4.1 File Description</a><a class="level-3" href="#headerEncodingDescription">3.4.2 Encoding Description</a><a class="level-3" href="#headerRevisionDescription">3.4.3 Revision Description</a><a class="level-2" href="#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a><a class="level-3" href="#FRBRentities">3.5.1 FRBR Entities in MEI</a><a class="level-3" href="#FRBRcomponents">3.5.2 Component Parts in FRBR</a><a class="level-3" href="#FRBRrelations">3.5.3 FRBR Relationships</a><a class="level-3" href="#headerRelatedItemVsFRBR">3.5.4 RelatedItem vs. FRBR</a><a class="level-2" href="#headerWorkDescription">3.6 Work Description</a><a class="level-3" href="#headerWorkIdentification">3.6.1 Work Identification</a><a class="level-3" href="#headerWorkIncipit">3.6.2 Incipits</a><a class="level-3" href="#headerWorkKeyTempoMeter">3.6.3 Key, Tempo, and Meter</a><a class="level-3" href="#headerWorkOtherChar">3.6.4 Other Identifying Characteristics</a><a class="level-3" href="#headerWorkHistory">3.6.5 Work History</a><a class="level-3" href="#headerWorkLanguage">3.6.6 Language Usage</a><a class="level-3" href="#headerWorkMedium">3.6.7 Performance Medium</a><a class="level-3" href="#headerWorkAudience">3.6.8 Audience and Context</a><a class="level-3" href="#headerWorkContents">3.6.9 Work Contents</a><a class="level-3" href="#headerWorkBiblList">3.6.10 Bibliographic Evidence</a><a class="level-3" href="#headerWorkNotes">3.6.11 Notes Statement</a><a class="level-3" href="#headerWorkClass">3.6.12 Classification</a><a class="level-3" href="#headerWorkRelationships">3.6.13 Work Relationships</a><a class="level-2" href="#msdesc">3.7 Encoding Sources in MEI</a><a class="level-3" href="#manuscriptsAndPrints">3.7.1 Manuscripts and prints</a><a class="level-3" href="#audioAndOther">3.7.2 Describing Audio Sources or Other Media</a><a class="level-3" href="#historicalAccount">3.7.3 Additional for historical account</a><a class="level-2" href="#headerusecases">3.8 Typical Use Cases</a><a class="level-3" href="#headerIndependentHeader">3.8.1 Independent Headers</a><a class="level-3" href="#headerExtendedMetadata">3.8.2 Including non-MEI Metadata in MEI files</a><a class="level-3" href="#headerMinimalRecommendedHeader">3.8.3 Minimal and Recommended Header Information</a><a class="level-3" href="#headerBiblAnalog">3.8.4 Header Elements and their Relationship to Other Bibliographic Standards</a><a class="level-3" href="#corpus">3.8.5 Musical Corpora</a></p>
+                     <p class="sectionToc sticky"><a class="level-2" href="#headerintro">3.1 Introduction</a><a class="level-2" href="#headerstructure">3.2 Structure of the MEI Header</a><a class="level-2" href="#commonconcepts">3.3 Common Metadata Concepts</a><a class="level-3" href="#headerTitleStatement">3.3.1 Title Statement</a><a class="level-3" href="#headerrespstatement">3.3.2 Responsibility Attribution</a><a class="level-2" href="#meifile">3.4 Information about an MEI file</a><a class="level-3" href="#headerFileDescription">3.4.1 File Description</a><a class="level-3" href="#headerEncodingDescription">3.4.2 Encoding Description</a><a class="level-3" href="#headerRevisionDescription">3.4.3 Revision Description</a><a class="level-2" href="#FRBR">3.5 Functional Requirements for Bibliographic Records (FRBR)</a><a class="level-3" href="#FRBRentities">3.5.1 FRBR Entities in MEI</a><a class="level-3" href="#FRBRcomponents">3.5.2 Component Parts in FRBR</a><a class="level-3" href="#FRBRrelations">3.5.3 FRBR Relationships</a><a class="level-3" href="#headerRelatedItemVsFRBR">3.5.4 RelatedItem vs. FRBR</a><a class="level-2" href="#headerWorkDescription">3.6 Work Description</a><a class="level-3" href="#headerWorkIdentification">3.6.1 Work Identification</a><a class="level-3" href="#headerWorkIncipit">3.6.2 Incipits</a><a class="level-3" href="#headerWorkKeyTempoMeter">3.6.3 Key, Tempo, and Meter</a><a class="level-3" href="#headerWorkOtherChar">3.6.4 Other Identifying Characteristics</a><a class="level-3" href="#headerWorkHistory">3.6.5 Work History</a><a class="level-3" href="#headerWorkLanguage">3.6.6 Language Usage</a><a class="level-3" href="#headerWorkMedium">3.6.7 Performance Medium</a><a class="level-3" href="#headerWorkAudience">3.6.8 Audience and Context</a><a class="level-3" href="#headerWorkContents">3.6.9 Work Contents</a><a class="level-3" href="#headerWorkBiblList">3.6.10 Bibliographic Evidence</a><a class="level-3" href="#headerWorkNotes">3.6.11 Notes Statement</a><a class="level-3" href="#headerWorkClass">3.6.12 Classification</a><a class="level-3" href="#headerWorkRelationships">3.6.13 Work Relationships</a><a class="level-2" href="#msdesc">3.7 Encoding Sources in MEI</a><a class="level-3" href="#manuscriptsAndPrints">3.7.1 Manuscripts and Prints</a><a class="level-3" href="#audioAndOther">3.7.2 Describing Audio Sources or Other Media</a><a class="level-3" href="#historicalAccount">3.7.3 Additional for historical account</a><a class="level-2" href="#headerusecases">3.8 Typical Use Cases</a><a class="level-3" href="#headerIndependentHeader">3.8.1 Independent Headers</a><a class="level-3" href="#headerExtendedMetadata">3.8.2 Including non-MEI Metadata in MEI files</a><a class="level-3" href="#headerMinimalRecommendedHeader">3.8.3 Minimal and Recommended Header Information</a><a class="level-3" href="#headerBiblAnalog">3.8.4 Header Elements and their Relationship to Other Bibliographic Standards</a><a class="level-3" href="#corpus">3.8.5 Musical Corpora</a></p>
                   </div>
                </div>
             </div>
