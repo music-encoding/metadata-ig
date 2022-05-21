@@ -7,7 +7,9 @@ This is a workspace where the metadata-ig store code snippets, examples and text
 ## The structure
 At the moment there is a big task to make a proposal for missing documentation of the guidelines Chapter 3(.7). All code that belongs to this task is stored in the [guidelines_chapter_3](https://github.com/music-encoding/metadata-ig/tree/main/guidelines_chapter_3) directory.
 - Inside you can find a file (copy of the music-encoding odd) where the drafts of the ig are implemented. When the draft is ready it will be pushed to a draft:pullRequest for further discussion with the whole MEI community.
-- The directory [website-compiled-dev](https://github.com/music-encoding/metadata-ig/tree/main/guidelines_chapter_3/website-compiled-dev) contains a static dev version of the MEI Guidelines including the very first drafts of the ig's proposals, for testing purpose. Please note that this directory is not updated in regular periods!
+- The directory [website-compiled-dev](https://github.com/music-encoding/metadata-ig/tree/main/guidelines_chapter_3/website-compiled-dev) contains a static dev version of the MEI Guidelines including the very first drafts of the ig's proposals, for testing purpose. Please note that this directory is not updated in regular periods! To view this compiled development version you have to open the following file in a internetbrowser on you local machine: `metadata-ig/guidelines_chapter_3/website-compiled-dev/index.html`
 
 ## How to contribute to the ig
-[...]
+- Workflow (discussions, issues)
+- Gitflow
+- [...]
