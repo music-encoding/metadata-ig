@@ -2,7 +2,7 @@
 The repository of the Metadata Interest Group
 
 ## What is it for?
-This is a workspace for the metadata-ig snippets, examples and text blocs can be stored for further development. This is also a place for managing discussions and issues the IG takes care about.
+This is a workspace for the metadata IG to store (code) snippets, examples and blocks of text for further development. This is also a place for managing discussions and issues that the IG cares about.
 
 ## Who manages this?
 The IG understands itsself as selfmanaged. The administrative co-chairs have admin access to this repo, but everybody who is an active member of the ig can ask for basic managing rights.
