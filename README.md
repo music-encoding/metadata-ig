@@ -9,7 +9,7 @@ The IG understands itsself as selfmanaged. The administrative co-chairs have adm
 
 For the metadata IG an active member is somebody who regularly attents the IG meetings.
 
-(Of cource the technical team of the MEI-community has also admin access.)
+(Of course, the technical team of the MEI community also has admin access.)
 
 ## The structure
 There is no defined structure for this repository at the moment.
