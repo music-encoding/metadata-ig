@@ -30,7 +30,7 @@ Contributions are always welcome! There are several ways to do this:
 ### Contributing to music-encoding as metadata IG
 The workflow to contribute to the schema and guidelines is different to the workflow described above. (see also [https://github.com/orgs/music-encoding/projects/2#card-83741232](https://github.com/orgs/music-encoding/projects/2#card-83741232))
 
-- If you haven't done already please fork the [music-encoding](https://github.com/music-encoding/music-encoding) repository (with your private account) 
+- If you have not already done so, please fork the [music-encoding](https://github.com/music-encoding/music-encoding) repository (using your personal account). 
 - Open a new branch (at your fork) for working. Do not use the develop branch! This will complicate updates from the main repo (upstream pulls).
 - When someone pushes code on behalf of someone else it is required to clarify this in a comment to the commit message (see [multi author commits](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors)). That means: Enter new line after the commit message (new line for each author). If the content is the result of a discussion in the IG the first Co-autor is `@music-encoding/ig-metadata`. All other co-authors will be named afterwads, each in a new line:
     - Co-authored-by: @music-encoding/ig-metadata
