@@ -37,7 +37,7 @@ The workflow to contribute to the schema and guidelines is different to the work
     - Co-authored-by: @username1
     - Co-authored-by: @username2
 
-Reasons: Git documents the creator of a commit regardless of the content's author. Further, the creator will appear in the contributer statistics of github. By adding co-authors in the way shown above this situation can be counteracted.
+Reasons: Git documents the creator of a commit regardless of the content author. Further, the creator will appear in GitHub's contributor statistics. By adding co-authors in the way shown above this situation can be counteracted.
  
 - If you like to push your code to the community (for review), you have to open a [pull request](https://github.com/music-encoding/music-encoding/pulls) in your private fork to the `ig-metadata` branch in the music-encoding repo (see figure below). This will start the process of contributing.
 
