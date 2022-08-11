@@ -32,7 +32,7 @@ The workflow to contribute to the schema and guidelines is different to the work
 
 - If you have not already done so, please fork the [music-encoding](https://github.com/music-encoding/music-encoding) repository (using your personal account). 
 - Open a new branch (at your fork) for working. Do not use the develop branch! This will complicate updates from the main repo (upstream pulls).
-- When someone pushes code on behalf of someone else it is required to clarify this in a comment to the commit message (see [multi author commits](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors)). That means: Enter new line after the commit message (new line for each author). If the content is the result of a discussion in the IG the first Co-autor is `@music-encoding/ig-metadata`. All other co-authors will be named afterwads, each in a new line:
+- When someone pushes code on behalf of someone else it is required to clarify this in a comment to the commit message (see [multi author commits](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors)). This means adding a new line after the commit message (one new line for every author). If the content is the result of a discussion in the IG the first co-author is `@music-encoding/ig-metadata`. All other co-authors are named afterwards, each on a new line:
     - Co-authored-by: @music-encoding/ig-metadata
     - Co-authored-by: @username1
     - Co-authored-by: @username2
