@@ -28,7 +28,7 @@ Contributions are always welcome! There are several ways to do this:
 - Pushing directly to the directory is not recommented. Please use always the [pull request](https://github.com/music-encoding/metadata-ig/pulls) feature. This makes it easier to manage the code and improves the documentation. (E.g., if release notes are generated automatically they will only document the accepted.)
 
 ### Contributing to music-encoding as metadata IG
-The workflow to contribute to the schema and guidelines is different to the workflow described above. (see also [https://github.com/orgs/music-encoding/projects/2#card-83741232](https://github.com/orgs/music-encoding/projects/2#card-83741232))
+The workflow to contribute to the schema and guidelines differs from the workflow described above. (see also [https://github.com/orgs/music-encoding/projects/2#card-83741232](https://github.com/orgs/music-encoding/projects/2#card-83741232))
 
 - If you have not already done so, please fork the [music-encoding](https://github.com/music-encoding/music-encoding) repository (using your personal account). 
 - Open a new branch (at your fork) for working. Do not use the develop branch! This will complicate updates from the main repo (upstream pulls).
