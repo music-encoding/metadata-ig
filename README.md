@@ -25,7 +25,7 @@ Contributions are always welcome! There are several ways to do this:
 - Pull Requests: If you would like to contribute to this repository by adding code, please open a [pull request](https://github.com/music-encoding/metadata-ig/pulls).
 
 ### Gitflow (IG repository)
-- Pushing directly to the directory is not recommented. Please use always the [pull request](https://github.com/music-encoding/metadata-ig/pulls) feature. This makes it easier to manage the code and improves the documentation. (E.g., if release notes are generated automatically they will only document the accepted.)
+- It is not recommended to push directly to the repository. Please always use the [pull request](https://github.com/music-encoding/metadata-ig/pulls) function. This makes it easier to manage the code and improves the documentation. (For example, if release notes are automatically generated, they only document what is accepted).
 
 ### Contributing to music-encoding as metadata IG
 The workflow to contribute to the schema and guidelines differs from the workflow described above. (see also [https://github.com/orgs/music-encoding/projects/2#card-83741232](https://github.com/orgs/music-encoding/projects/2#card-83741232))
