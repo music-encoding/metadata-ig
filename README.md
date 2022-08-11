@@ -5,7 +5,7 @@ The repository of the Metadata Interest Group
 This is a workspace for the metadata IG to store (code) snippets, examples and blocks of text for further development. This is also a place for managing discussions and issues that the IG cares about.
 
 ## Who manages this?
-The IG understands itsself as selfmanaged. The administrative co-chairs have admin access to this repo, but everybody who is an active member of the ig can ask for basic managing rights.
+The IG sees itself as self-managed. The administrative co-chairs have admin access to this repo, but anyone who is an active member of the IG can request basic administrative rights.
 
 For the metadata IG an active member is somebody who regularly attents the IG meetings.
 
