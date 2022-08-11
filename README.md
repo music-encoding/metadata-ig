@@ -18,7 +18,7 @@ It is recommended to organize the folders thematically.
 ## How to contribute to the IG
 ### Workflow (discussions, issues)
 
-Contribution is always welcome! There are several ways for it:
+Contributions are always welcome! There are several ways to do this:
 
 - Diskussions: This should be some kind of 'save place' for everyone (newbies, old hands, etc.) to come up with everything that is on their mind: questions, ideas (that can be very vage), announcements, polls, etc. All you have to do ist to [open a discussion](https://github.com/music-encoding/metadata-ig/discussions) and you'll get feedback from the community. Every time you open a discussion please choose a category to make them easier to manage.
 - Issues: If there is something the IG should work on or something that should be discussed in an IG-meeting (e.g., improvement proposals to the schema) just [open an issue](https://github.com/music-encoding/metadata-ig/issues).Every time you open an issue please label them for easier management. In comparison to a discussion an issue is something that needs work and is understand as a todo for the IG.
