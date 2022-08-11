@@ -7,7 +7,7 @@ This is a workspace for the metadata IG to store (code) snippets, examples and b
 ## Who manages this?
 The IG sees itself as self-managed. The administrative co-chairs have admin access to this repo, but anyone who is an active member of the IG can request basic administrative rights.
 
-For the metadata IG an active member is somebody who regularly attents the IG meetings.
+For the metadata IG, an active member is someone who regularly attends IG meetings.
 
 (Of course, the technical team of the MEI community also has admin access.)
 
