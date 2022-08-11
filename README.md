@@ -21,7 +21,7 @@ It is recommended to organize the folders thematically.
 Contributions are always welcome! There are several ways to do this:
 
 - Discussions: This should be a sort of 'safe space' for everyone (newbies, old hands, etc.) to say whatever is on their mind: Questions, ideas (which can be very vague), announcements, polls, etc. All you have to do is [open a discussion](https://github.com/music-encoding/metadata-ig/discussions) and you will get feedback from the community. Each time you open a discussion, please choose a category to make it easier to manage.
-- Issues: If there is something the IG should work on or something that should be discussed in an IG-meeting (e.g., improvement proposals to the schema) just [open an issue](https://github.com/music-encoding/metadata-ig/issues).Every time you open an issue please label them for easier management. In comparison to a discussion an issue is something that needs work and is understand as a todo for the IG.
+- Issues: If there is something the IG should work on, or something that should be discussed in an IG meeting (e.g. suggestions for improving the schema), just [open an issue](https://github.com/music-encoding/metadata-ig/issues). Each time you open an issue, please label it to make it easier to manage. Unlike a discussion, an issue is something that needs to be worked on and is understood as a ToDo for the IG.
 - Pull Requests: If you like to contribute to this repository by adding some code please [open a pull request](https://github.com/music-encoding/metadata-ig/pulls).
 
 ### Gitflow (IG repository)
